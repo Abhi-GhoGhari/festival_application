@@ -1,13 +1,16 @@
+import 'package:google_fonts/google_fonts.dart';
+import '../haders.dart';
 import '../modal/app_modal.dart';
 
-String imagePath = "lib/assets/images";
-String imagePathB = "lib/assets/imageB";
+String imagePath = "lib/assets/images/";
+String imagePathB = "lib/assets/imageB/";
+
 Map<String, dynamic> allAppData = {
   "festivals": [
     {
       "name": "Diwali",
-      "image": "$imagePath/Diwali.jpg",
-      "imageB": "$imagePathB/Diwali.jpg",
+      "image": "${imagePath}Diwali.jpg",
+      "imageB": "${imagePathB}DiwaliB.jpg",
       "quotes": [
         "दीपावલી ની હાર્દિક શુભકામનાઓ! તમારો જીવન ખુશી અને ઉત્સાહના સાથે ભરાયું રહે.",
         "દીપાવળીની આ પાવન અવસરે તમારે અને તમારા પરિવારને શુભકામનાઓ!",
@@ -18,8 +21,8 @@ Map<String, dynamic> allAppData = {
     },
     {
       "name": "Holi",
-      "image": "$imagePath/Holi.jpg",
-      "imageB": "$imagePathB/HoliB.jpg",
+      "image": "${imagePath}Holi.jpg",
+      "imageB": "${imagePathB}HoliB.jpg",
       "quotes": [
         "હોળીના આ રંગીન તહેવારમાં તમારા જીવનમાં ખુશી અને રંગ ભર્યો!",
         "હોળીના આ પાવન અવસરે તમને અને તમારા પરિવારને ઢેરો શુભકામનાઓ!",
@@ -29,8 +32,8 @@ Map<String, dynamic> allAppData = {
     },
     {
       "name": "Makar Sankranti",
-      "image": "$imagePath/Makarsakranti.jpg",
-      "imageB": "$imagePathB/MakarsakrantiB.jpg",
+      "image": "${imagePath}Makarsakranti.jpg",
+      "imageB": "${imagePathB}MakarsakrantiB.jpg",
       "quotes": [
         "મકર સંક્રાંતિની આ પાવન પર્વમાં તમારે અને તમારા પરિવારને બહું બહું શુભકામનાઓ.",
         "ઉત્તરાયણના આ મોસમમાં તમારો જીવન ખુશીથી ભરાયો હોવો.",
@@ -41,8 +44,8 @@ Map<String, dynamic> allAppData = {
     },
     {
       "name": "Navratri",
-      "image": "$imagePath/Navratri.jpg",
-      "imageB": "$imagePathB/NavratriB.jpg",
+      "image": "${imagePath}Navratri.jpg",
+      "imageB": "${imagePathB}NavratriB.jpg",
       "quotes": [
         "નવરાત્રીના આ પાવન પર્વમાં માં દુર્ગા ની કૃપા તમારે બની રહે.",
         "તમારો જીવન નવરાત્રીના આ પાવન તહેવારની ખુશિઓ સાથે ભરો.",
@@ -53,8 +56,8 @@ Map<String, dynamic> allAppData = {
     },
     {
       "name": "Ganesh Chaturthi",
-      "image": "$imagePath/Ganesh_Chaturthi.jpg",
-      "imageB": "$imagePathB/Ganesh_ChaturthiB.jpg",
+      "image": "${imagePath}Ganesh_Chaturthi.jpg",
+      "imageB": "${imagePathB}Ganesh_ChaturthiB.jpg",
       "quotes": [
         "ગણેશ ચતુર્થીના આ પાવન અવસર પર તમને અને તમારા પરિવારને ઢેરો શુભકામનાઓ.",
         "ગણપતિ બપ્પા મોરિયા! માંગલમૂર્તિ મોરિયા! તમારા જીવનમાં આવે ખુશીઓ નો ઉદ્ઘાટન.",
@@ -65,8 +68,8 @@ Map<String, dynamic> allAppData = {
     },
     {
       "name": "Raksha Bandhan",
-      "image": "$imagePath/Raksha_Bandhan.jpg",
-      "imageB": "$imagePathB/Raksha_BandhanB.jpg",
+      "image": "${imagePath}Raksha_Bandhan.jpg",
+      "imageB": "${imagePathB}Raksha_BandhanB.jpg",
       "quotes": [
         "રક્ષાબંધન ની આ પાવન અવસર પર તમને અને તમારો ભાઈ ને ઢેરો શુભકામનાઓ.",
         "રક્ષાબંધન ને ઈશ્વર તમારી રક્ષા માટે મારી શુભકામનાઓ.",
@@ -77,8 +80,8 @@ Map<String, dynamic> allAppData = {
     },
     {
       "name": "Maha Shivaratri",
-      "image": "$imagePath/Shivratri.jpg",
-      "imageB": "$imagePathB/ShivratriB.jpg",
+      "image": "${imagePath}Shivratri.jpg",
+      "imageB": "${imagePathB}ShivratriB.jpg",
       "quotes": [
         "મહા શિવરાત્રિ ની આ પાવન અવસર પર ભગવાન શિવ ની કૃપા તમારે બની રહે.",
         "તમારો જીવન મહા શિવરાત્રિ ની શુભકામનાઓ.",
@@ -89,8 +92,8 @@ Map<String, dynamic> allAppData = {
     },
     {
       "name": "Janmashtami",
-      "image": "$imagePath/Janmashtami.jpg",
-      "imageB": "$imagePathB/JanmashtamiB.jpg",
+      "image": "${imagePath}Janmashtami.jpg",
+      "imageB": "${imagePathB}JanmashtamiB.jpg",
       "quotes": [
         "જન્માષ્ટમી ની આ પાવન અવસર પર તમારે અને તમારા પરિવારને ઢેરો શુભકામનાઓ.",
         "કૃષ્ણ કી માખન ચોરી નો આ વિશેષ દિવસ તમારા જીવનમાં સફળતા અને ખુશિઓ લાવે.",
@@ -101,4 +104,36 @@ Map<String, dynamic> allAppData = {
     }
   ]
 };
+
 FestivalData festivalData = FestivalData.fromMap(allAppData);
+
+// List<TextStyle> quoteFontFamily = [
+//   GoogleFonts.abel(),
+//   GoogleFonts.roboto(),
+//   GoogleFonts.dancingScript(),
+//   GoogleFonts.bitter(),
+//   GoogleFonts.anton(),
+//   GoogleFonts.yatraOne(),
+//   GoogleFonts.pacifico(),
+//   GoogleFonts.fjallaOne(),
+//   GoogleFonts.shadowsIntoLight(),
+//   GoogleFonts.indieFlower(),
+//   GoogleFonts.zillaSlab(),
+//   GoogleFonts.satisfy(),
+//   GoogleFonts.permanentMarker(),
+//   GoogleFonts.amaticSc(),
+//   GoogleFonts.cinzel(),
+//   GoogleFonts.sairaCondensed(),
+//   GoogleFonts.kalam(),
+//   GoogleFonts.courgette(),
+//   GoogleFonts.righteous(),
+//   GoogleFonts.tinos(),
+//   GoogleFonts.lobster(),
+//   GoogleFonts.changa(),
+//   GoogleFonts.greatVibes(),
+//   GoogleFonts.zeyada(),
+//   GoogleFonts.aladin(),
+//   GoogleFonts.kaushanScript(),
+//   GoogleFonts.pathwayGothicOne(),
+//   GoogleFonts.sacramento(),
+// ];
